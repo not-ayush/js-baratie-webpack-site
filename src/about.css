@@ -1,0 +1,24 @@
+.about-sec {
+  display: flex;
+  min-height: 80vh;
+}
+
+.about-img {
+  flex-basis: 50%;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 400px;
+  object-fit: contain;
+}
+
+.about-sec-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 50px;
+}
