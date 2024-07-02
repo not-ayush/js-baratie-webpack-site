@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">Baratie</div>
-      <div class="nav-links">
-        <span class="nav-link"><a href="#">Home</a></span>
-        <span class="nav-link"><a href="#">Menu</a></span>
-        <span class="nav-link"><a class="current-page" href="#">About Us</a></span>
-      </div>
-      <div><button class="nav-cta">Book A Table!</button></div>
-    </header>
-    <div id="container">
+let zeffImg = require("../img/about-zeff.jpg");
+let expImg = require("../img/baratie-exp.jpg");
+
+let aboutHTML = `
       <div class="about-sec">
         <div class="about-sec-content">
           <h2>Our Story</h2>
@@ -28,12 +13,12 @@
           <span>(This is a website for the fictional restaurant "Baratie" from the series "One Piece")</span>
         </div>
         <div class="about-img">
-          <img src="img/about-zeff.jpg" alt="zeff" />
+          <img src="${zeffImg}" alt="zeff" />
         </div>
       </div>
       <div class="about-sec">
         <div class="about-img">
-          <img src="img/baratie-exp.jpg" alt="" />
+          <img src="${expImg}" alt="" />
         </div>
         <div class="about-sec-content">
           <h2>The Baratie Experience</h2>
@@ -46,8 +31,6 @@
           </ul>
         </div>
       </div>
-    </div>
-    <footer>Baratie </footer>
-  </body>
-</html>
+    `
 
+export {aboutHTML}

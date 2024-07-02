@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Joe College Sans NF W00 Rg";
+  src: url("./fonts/joe-college/8ea6cd010a318c58daba0e05c748a0d2.woff") format("woff"),
+    url("./fonts/joe-college/8ea6cd010a318c58daba0e05c748a0d2.woff2") format("woff2"),
+    url("./fonts/joe-college/8ea6cd010a318c58daba0e05c748a0d2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"),
+    url("./fonts/roboto/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"),
+    url("./fonts/roboto/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --main: #0c42d4;
+}
+
+* {
+  font-family: Roboto, "Segoe UI", Oxygen, Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+button,
+.logo,
+header a,
+footer {
+  font-family: "Joe College Sans NF W00 Rg", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 25px 10vw;
+}
+
+#container {
+  padding: 0 10vw;
+}
+
+.logo {
+  font-size: 1.5rem;
+  user-select: none;
+  color: var(--main);
+  text-shadow: 1px 1px black;
+}
+
+.nav-links {
+  margin-left: auto;
+  margin-right: 10vw;
+  display: flex;
+  gap: 30px;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+header a:hover,
+header a.current-page {
+  text-decoration: underline;
+  text-decoration-color: var(--main);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+header a:active {
+  color: var(--main);
+}
+
+button {
+  padding: 15px 20px;
+  border: 2px solid var(--main);
+}
+
+.nav-cta {
+  color: white;
+  background-color: var(--main);
+}
+
+.nav-cta:hover {
+  color: var(--main);
+  background-color: white;
+  cursor: pointer;
+}
+
+.nav-cta:active {
+  color: white;
+  background-color: var(--main);
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--main);
+  color: white;
+  padding: 25px 10vw;
+}
+
+/* about */
+
+.about-sec {
+  display: flex;
+  min-height: 80vh;
+}
+
+.about-img {
+  flex-basis: 50%;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 400px;
+  object-fit: contain;
+}
+
+.about-sec-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 50px;
+}
+
+/* menu */
+
+.menu {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  min-height: 75vh;
+}
+
+.menu-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-item {
+  padding-left: 20px;
+  position: relative;
+}
+
+.menu-item-info {
+  font-weight: 500;
+}
+
+.menu-item::before {
+  content: "\2023";
+  width: 20px;
+  position: absolute;
+  margin-left: -20px;
+}
+
+/* home */
+
+.hero-cta {
+  color: var(--main);
+  background-color: white;
+}
+
+.hero-cta:active {
+  color: var(--main) !important;
+  background-color: white !important ;
+  cursor: pointer;
+}
+
+.hero-cta:hover {
+  color: white;
+  background-color: var(--main);
+  cursor: pointer;
+}
+
+.section {
+  display: flex;
+  min-height: 500px;
+}
+
+.section-img img {
+  width: 600px;
+}
+
+.section-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 50px;
+}
+
+.section-1 {
+  height: 80vh;
+}
+
+.section-1 .section-img {
+  display: flex;
+  align-items: center;
+}
+
+.section-2 {
+  flex-direction: row-reverse;
+  align-content: center;
+}
+
+.section-2 .section-img {
+  display: flex;
+  align-items: center;
+}
+
+.section-2 img {
+  width: 300px;
+}
+
+.section-2 .section-info {
+  padding-right: 10vw;
+}

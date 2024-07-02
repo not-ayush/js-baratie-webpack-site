@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">Baratie</div>
-      <div class="nav-links">
-        <span class="nav-link"><a href="#">Home</a></span>
-        <span class="nav-link"><a class="current-page" href="#">Menu</a></span>
-        <span class="nav-link"><a href="#">About Us</a></span>
-      </div>
-      <div><button class="nav-cta">Book A Table!</button></div>
-    </header>
-    <div id="container">
+let menuHTML = `
       <h1>Baratie Restaurant Menu</h1>
       <div class="menu">
         <div class="menu-col">
@@ -97,8 +79,6 @@
           </div>
         </div></div>
       </div>
-    </div>
-    <footer>Baratie</footer>
-  </body>
-</html>
+   `
 
+export {menuHTML}

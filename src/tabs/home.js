@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Baratie</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">Baratie</div>
-      <div class="nav-links">
-        <span><a class="nav-link current-page" href="#">Home</a></span>
-        <span><a class="nav-link" href="#">Menu</a></span>
-        <span><a class="nav-link" href="#">About Us</a></span>
-      </div>
-      <div><button class="nav-cta">Book A Table!</button></div>
-    </header>
-    <div id="container">
+let homeHTML = `
       <div class="section section-1">
         <div class="section-info">
           <h1>Welcome to the Baratie!</h1>
@@ -41,8 +23,5 @@
         </div>
         <div class="section-img"><img src="./img/navigation.png" alt="Map"/></div>
       </div>
-    </div>
-    <footer>Baratie</footer>
-  </body>
-</html>
-
+    `
+export {homeHTML}
